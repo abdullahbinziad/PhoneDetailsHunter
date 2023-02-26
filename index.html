@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Phone Hunter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="">
+      <header class="w-3/4 mx-auto text-center py-8">
+        <div
+          class="form-control w-full space-y-2 flex flex-col justify-center items-center"
+        >
+          <span class="label-text text-2xl">Search Yoor Phone Model</span>
+
+          <div class="flex flex-row justify-center items-center w-3/4">
+            <input
+              id="search-keyword"
+              type="text"
+              placeholder="Type here"
+              class="input input-bordered w-full"
+            />
+            <button id="search-btn" class="btn btn-primary">Search</button>
+          </div>
+        </div>
+        <!-- spiner  -->
+        <div
+          
+          class=" flex justify-center items-center align-middle "
+        >
+          <img id="spinner-gif" class="hidden" src="./img/spinner.gif" alt="" />
+        </div>
+      </header>
+
+      <!-- the Main Phone data Display as a card  -->
+      <main class="w-10/12 mx-auto py-5">
+        <div id="card-parent" class="grid grid-cols-3 gap-2">
+          <!-- Here we make dinamic card for every single phone -->
+        </div>
+
+        <!-- Load More Button -->
+        <div class="flex flex-col items-center py-4 ">
+          <button id="all-result-btn" class="btn btn-info w-40 hidden">
+            See All Results
+          </button>
+        </div>
+      </main>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
